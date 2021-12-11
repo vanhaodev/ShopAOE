@@ -16,6 +16,10 @@ router.post("/create-account", authController.postSignUp);
 
 router.get("/account", userController.getAccount);
 
+router.get("/taixiu", userController.play_Taixiu);
+
+router.post("/taixiu-checking", userController.play_Taixiu_checking);
+
 router.get("/account-change-info", userController.getAccountChange);
 
 router.post("/account-change-info", userController.postAccountChange);
@@ -31,5 +35,7 @@ router.post("/forgot-password", authController.postForgotPass);
 router.get("/change-password", authController.getChangePassword);
 
 router.post("/change-password", authController.postChangePassword);
+
+
 
 module.exports = router;

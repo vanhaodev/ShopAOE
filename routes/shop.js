@@ -13,6 +13,10 @@ router.get(
   productController.getProducts
 );
 
+router.get(
+  "/products/:gender", productController.getProducts
+);
+
 router.post("/products/:productType*?", productController.postNumItems);
 
 router.post("/product/:productId", productController.postComment);

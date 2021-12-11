@@ -4600,7 +4600,7 @@ img.mfp-img {
   width: 100%;
   cursor: auto;
   text-align: center;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
 
 .mfp-title {
   color: #fff;
@@ -9773,7 +9773,7 @@ img.tp-slider-alternative-image {
     font-size: 13px;
     line-height: 23px;
     color: #ffffff;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     letter-spacing: 0.06em;
     word-spacing: 0.03em;
     position: relative; }
@@ -9884,7 +9884,7 @@ header {
       display: inline-block;
       font-size: 19px;
       line-height: 1.1;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 500;
       color: #2879fe;
       text-transform: uppercase; }
@@ -10280,7 +10280,7 @@ header {
         -ms-flex: 2 1 auto;
         flex: 2 1 auto; }
         header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item .tt-item-descriptions .tt-title {
-          font-family: "Hind", sans-serif;
+          font-family: arial, sans-serif;
           font-weight: 400;
           font-size: 14px;
           line-height: 22px;
@@ -10358,7 +10358,7 @@ header {
         font-weight: 500;
         color: #191919;
         font-size: 14px;
-        font-family: "Hind", sans-serif; }
+        font-family: arial, sans-serif; }
       header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-total-row .tt-cart-total-price {
         -webkit-flex: 2 1 auto;
         -ms-flex: 2 1 auto;
@@ -10433,7 +10433,7 @@ header {
         border: none;
         border-bottom: 1px solid #eceaea;
         padding: 11px 12px 10px 0px;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         box-shadow: none;
         outline: none;
         width: 100%;
@@ -10597,7 +10597,7 @@ header {
           font-size: 16px;
           border: 1px solid transparent;
           padding: 14px 12px 8px 0px;
-          font-family: "Hind", sans-serif;
+          font-family: arial, sans-serif;
           box-shadow: none;
           outline: none;
           width: calc(100% - 40px);
@@ -11435,7 +11435,7 @@ header .container-fluid {
       right: 0; }
   .tt-desctop-menu .tt-badge {
     display: inline-block;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     color: #ffffff;
     background-color: transparent;
@@ -11486,7 +11486,7 @@ header .container-fluid {
     -ms-flex-align: center;
     align-items: center; }
     .tt-desctop-menu nav > ul > li.dropdown > a {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       line-height: 1.1;
       font-weight: 400;
@@ -11503,7 +11503,7 @@ header .container-fluid {
     letter-spacing: 0.03em;
     padding-bottom: 8px;
     font-weight: 500;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
@@ -12044,7 +12044,7 @@ body:not(.touch-device) .tt-menu-toggle:not(.stylization-02):hover i {
     -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear; }
     .tt-promo-02 .tt-description .tt-title-small {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 16px;
       line-height: 26px;
       font-weight: 500;
@@ -12054,7 +12054,7 @@ body:not(.touch-device) .tt-menu-toggle:not(.stylization-02):hover i {
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-promo-02 .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 26px;
       line-height: 34px;
       font-weight: 500;
@@ -12064,7 +12064,7 @@ body:not(.touch-device) .tt-menu-toggle:not(.stylization-02):hover i {
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-promo-02 .tt-description .tt-title-xlarge {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 36px;
       line-height: 41px;
       font-weight: 500;
@@ -12237,7 +12237,7 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
         color: #2879fe;
         background: transparent; }
   .panel-menu #mm0.mmpanel a:not(.mm-close) {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     color: #191919;
     background-color: transparent; }
@@ -12251,11 +12251,11 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
   .panel-menu #mm0.mmpanel .mm-next-level:after {
     top: 12px; }
   .panel-menu .mmpanel:not(#mm0) a:not(.mm-original-link) {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400; }
   .panel-menu .mmpanel .tt-badge {
     display: inline-block;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     color: #ffffff;
     font-size: 12px;
@@ -12355,7 +12355,7 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
     .panel-menu .mm-next-level:hover:after {
       color: #2879fe; }
   .panel-menu .mm-original-link {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     color: #191919;
     background-color: transparent; }
@@ -12842,7 +12842,7 @@ footer {
     line-height: 1.1;
     position: relative;
     top: 5px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #2879fe;
     font-weight: 500;
     -moz-transition: color 0.2s linear;
@@ -14048,7 +14048,7 @@ footer {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
@@ -14288,7 +14288,7 @@ footer {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
@@ -14617,7 +14617,7 @@ footer {
       -webkit-align-items: flex-start;
       -ms-flex-align: start;
       align-items: flex-start;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       position: relative;
       font-size: 14px;
       font-weight: 500;
@@ -14641,7 +14641,7 @@ footer {
       line-height: 30px;
       font-weight: 500;
       letter-spacing: 0.04em;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       position: relative;
       margin: 7px 0 0 0;
       color: #191919; }
@@ -14865,7 +14865,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
   font-weight: 400;
   margin: -2px 0 0 -5px;
   padding: 0 0 5px 0;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   letter-spacing: 0.02em; }
   .tt-aside-post .item .tt-tag a {
     color: #2879fe;
@@ -14881,7 +14881,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
   color: #191919;
   display: block;
   font-size: 14px;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 500;
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
@@ -14952,7 +14952,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
     .tt-pagination ul li a {
       font-size: 14px;
       padding: 5px;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       display: inline-block;
       font-weight: 500;
@@ -15101,7 +15101,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
         -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         font-size: 14px;
         font-weight: 500;
         line-height: 17px;
@@ -15322,7 +15322,7 @@ html:not(.ie) .tt-layout-01-post .tt-post-content .tt-background {
   padding-bottom: 49px; }
   .tt-blog-masonry .tt-filter-nav .button {
     color: #999999;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     padding: 5px;
     letter-spacing: 0.03em;
@@ -15437,7 +15437,7 @@ html:not(.ie) .tt-layout-01-post .tt-post-content .tt-background {
   padding-bottom: 69px; }
   .tt-portfolio-masonry .tt-filter-nav .button {
     color: #999999;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     padding: 5px;
     letter-spacing: 0.03em;
@@ -15533,7 +15533,7 @@ html:not(.ie) .tt-layout-01-post .tt-post-content .tt-background {
         margin: 0;
         padding: 0;
         color: #ffffff;
-        font-family: "Hind", sans-serif; }
+        font-family: arial, sans-serif; }
         .tt-portfolio-content figure figcaption .tt-title a {
           color: #ffffff; }
         .tt-portfolio-content figure figcaption .tt-title a:hover {
@@ -15708,7 +15708,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   .tt-product-single-info .tt-price {
     font-size: 30px;
     line-height: 40px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     color: #2879fe; }
     .tt-product-single-info .tt-price span {
@@ -15866,7 +15866,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
     text-align: center;
     border: none;
     outline: none;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     color: #191919;
     border-radius: 6px; }
@@ -15906,7 +15906,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.03em;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -16055,7 +16055,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -16088,7 +16088,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
       line-height: 26px;
       letter-spacing: 0.02em;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       margin-right: 10px; }
   .tt-review-block .tt-review-form form {
     margin-top: 11px; }
@@ -16141,7 +16141,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   margin-left: -10px;
   margin-top: -10px; }
   .tt-product-single-info .tt-label [class^="tt-label"] {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
@@ -16331,7 +16331,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   font-size: 14px;
   line-height: 26px;
   color: #191919;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0.03em; }
 
@@ -17005,7 +17005,7 @@ html.ie.gecko body.modal-open {
       .tt-modal-addtocart.desctope .row > div:last-child .btn {
         width: 100%; }
   .tt-modal-addtocart.desctope .tt-modal-messages {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     font-size: 20px;
     line-height: 1;
@@ -17019,7 +17019,7 @@ html.ie.gecko body.modal-open {
       max-width: 154px;
       height: auto; }
     .tt-modal-addtocart.desctope .tt-modal-product .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 400;
       font-size: 14px;
       margin-top: 12px;
@@ -17029,7 +17029,7 @@ html.ie.gecko body.modal-open {
         .tt-modal-addtocart.desctope .tt-modal-product .tt-title a:hover {
           color: #2879fe; }
     .tt-modal-addtocart.desctope .tt-modal-product .tt-qty {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 500;
       font-size: 14px;
       margin-top: 7px;
@@ -17037,7 +17037,7 @@ html.ie.gecko body.modal-open {
     .tt-modal-addtocart.desctope .tt-modal-product > *:nth-child(1) {
       margin-top: 0; }
   .tt-modal-addtocart.desctope .tt-product-total {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     color: #191919;
     font-size: 14px;
@@ -17048,7 +17048,7 @@ html.ie.gecko body.modal-open {
     color: #777777;
     display: inline-block; }
     .tt-modal-addtocart.desctope .tt-cart-total .tt-total {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 500;
       color: #191919;
       margin-top: 11px; }
@@ -17075,7 +17075,7 @@ html.ie.gecko body.modal-open {
 .tt-modal-addtocart.mobile {
   margin-top: 9px; }
   .tt-modal-addtocart.mobile .tt-modal-messages {
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     font-size: 20px;
     line-height: 1.2;
@@ -17246,7 +17246,7 @@ html.ie.gecko body.modal-open {
   line-height: 1.42;
   font-weight: 500;
   letter-spacing: 0.03em;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
 
 .tt-modal-newsletter .tt-modal-newsletter-promo .tt-title-small + .tt-title-large {
   margin-top: -5px; }
@@ -17257,7 +17257,7 @@ html.ie.gecko body.modal-open {
   line-height: 1.1;
   font-weight: 500;
   letter-spacing: 0.04em;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
 
 .tt-modal-newsletter .tt-modal-newsletter-promo p {
   color: #ffffff;
@@ -17266,7 +17266,7 @@ html.ie.gecko body.modal-open {
   line-height: 26px;
   letter-spacing: 0.03em;
   margin-top: 2px;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
 
 .tt-modal-newsletter .tt-modal-newsletter-promo > *:nth-child(1) {
   margin-top: 0; }
@@ -17686,7 +17686,7 @@ html.ie.gecko body.modal-open {
       display: inline-block;
       position: relative;
       top: -2px;
-      font-family: "Hind", sans-serif; }
+      font-family: arial, sans-serif; }
     .tt-filters-options .tt-btn-toggle a:before {
       content: '\e9b9';
       font-family: "wokiee";
@@ -18000,7 +18000,7 @@ body.no-scroll {
       background: linear-gradient(to top, rgba(255, 255, 255, 0), white 20%); }
       .tt-btn-col-close a {
         color: #191919;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         padding: 22px 14px 20px 28px; }
@@ -18276,7 +18276,7 @@ html.ie .tt-btn-col-close {
   .tt-aside .tt-item .tt-content .tt-title {
     font-size: 14px;
     font-weight: normal;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     -moz-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
@@ -18585,7 +18585,7 @@ html.ie .tt-btn-col-close {
           color: #2879fe; }
     .tt-product.tt-view .tt-description .tt-title,
     .tt-product-design02.tt-view .tt-description .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 400;
       color: #191919; }
@@ -18658,7 +18658,7 @@ html.ie .tt-btn-col-close {
     .tt-product-design02.tt-view .tt-description .tt-btn-addtocart {
       line-height: 1;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       display: inline-block;
       position: relative;
       letter-spacing: 0.04em;
@@ -19108,7 +19108,7 @@ html.ie .tt-btn-col-close {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        font-family: "Hind", sans-serif; }
+        font-family: arial, sans-serif; }
         .tt-product:not(.tt-view) .tt-description .tt-add-info li {
           font-size: 12px;
           line-height: 19px;
@@ -19122,7 +19122,7 @@ html.ie .tt-btn-col-close {
           .tt-product:not(.tt-view) .tt-description .tt-add-info li a:hover {
             color: #2879fe; }
       .tt-product:not(.tt-view) .tt-description .tt-title {
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         font-size: 14px;
         font-weight: 500;
         color: #191919; }
@@ -19154,7 +19154,7 @@ html.ie .tt-btn-col-close {
         font-size: 16px;
         line-height: 20px;
         font-weight: 500;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         color: #191919; }
         .tt-product:not(.tt-view) .tt-description .tt-price .new-price {
           color: #f8353e;
@@ -19205,7 +19205,7 @@ html.ie .tt-btn-col-close {
       .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart {
         line-height: 1;
         font-weight: 400;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         display: inline-block;
         position: relative;
         letter-spacing: 0.04em;
@@ -19525,7 +19525,7 @@ html.ie .tt-btn-col-close {
           .tt-product-design02:not(.tt-view) .tt-description .tt-add-info li a:hover {
             color: #2879fe; }
       .tt-product-design02:not(.tt-view) .tt-description .tt-title {
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         font-size: 14px;
         font-weight: 400;
         color: #191919; }
@@ -19605,7 +19605,7 @@ html.ie .tt-btn-col-close {
       color: #2879fe;
       font-size: 14px;
       font-weight: 400;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       -moz-transition: color 0.2s linear;
       -o-transition: color 0.2s linear;
       -webkit-transition: color 0.2s linear;
@@ -19980,7 +19980,7 @@ html.ie .tt-btn-col-close {
           color: #2879fe; }
     .tt-product:not(.tt-view) .tt-description .tt-title,
     .tt-product-design02:not(.tt-view) .tt-description .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 400;
       color: #191919; }
@@ -20090,7 +20090,7 @@ html.ie .tt-btn-col-close {
     .tt-product-design02:not(.tt-view) .tt-description .tt-btn-addtocart {
       line-height: 1;
       font-weight: 400;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       display: inline-block;
       position: relative;
       letter-spacing: 0.04em;
@@ -20542,7 +20542,7 @@ html.ie .tt-btn-col-close {
     -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear; }
     .tt-promo-box .tt-description .tt-title-small {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 16px;
       line-height: 26px;
@@ -20558,7 +20558,7 @@ html.ie .tt-btn-col-close {
         -webkit-transition: color 0.2s linear;
         transition: color 0.2s linear; }
     .tt-promo-box .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 26px;
       line-height: 34px;
@@ -20815,7 +20815,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       max-width: 700px;
       text-align: center; }
     .tt-promo-fullwidth .tt-description .tt-title-small {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 50px;
       line-height: 60px;
@@ -20825,7 +20825,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-promo-fullwidth .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 90px;
       line-height: 90px;
@@ -20835,7 +20835,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-promo-fullwidth .tt-description p {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 16px;
       line-height: 22px;
       margin-top: 20px;
@@ -21052,7 +21052,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     .tt-promo-fullwidth-02 .tt-description .tt-description-wrapper {
       text-align: center; }
     .tt-promo-fullwidth-02 .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 34px;
       line-height: 44px;
@@ -21147,7 +21147,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     position: relative;
     text-align: center; }
     .tt-collection-item .tt-description .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 400;
       color: #191919;
@@ -21201,7 +21201,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     .tt-promo02 .tt-description:not(:empty) {
       padding-top: 14px; }
     .tt-promo02 .tt-description .tt-title-small {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 16px;
       line-height: 26px;
@@ -21212,7 +21212,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-promo02 .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 26px;
       line-height: 34px;
@@ -21375,7 +21375,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     .tt-promo-fixed .tt-description .tt-title {
       font-size: 14px;
       font-weight: 400;
-      font-family: "Hind", sans-serif; }
+      font-family: arial, sans-serif; }
     .tt-promo-fixed .tt-description a {
       color: #191919;
       display: inline-block;
@@ -21446,7 +21446,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
 .tt-shopcart-table .tt-title {
   font-size: 14px;
   font-weight: normal;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   padding-right: 20px;
   color: #191919; }
   .tt-shopcart-table .tt-title a {
@@ -21614,7 +21614,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
 
 .tt-shopcart-table01 {
   width: 100%;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
   .tt-shopcart-table01 th,
   .tt-shopcart-table01 td {
     color: #191919;
@@ -21693,7 +21693,7 @@ table + *[class^="btn"] {
 .tt-shopcart-table-02 .tt-title {
   font-size: 14px;
   font-weight: normal;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   padding-right: 20px;
   color: #191919; }
   .tt-shopcart-table-02 .tt-title a {
@@ -21913,7 +21913,7 @@ table + *[class^="btn"] {
   margin-top: 30px; }
 
 .tt-shopping-layout .tt-link-back {
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #2879fe;
@@ -21994,7 +21994,7 @@ table + *[class^="btn"] {
     font-weight: 500;
     letter-spacing: 0.02em;
     padding: 12px 10px 10px 0;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .tt-table-shop-01 tbody tr {
     border-top: 1px solid #e9e7e7; }
   .tt-table-shop-01 tbody td {
@@ -22021,7 +22021,7 @@ table + *[class^="btn"] {
     line-height: 24px;
     font-weight: 500;
     padding: 8px 10px 7px 0;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .tt-table-shop-02 tbody tr {
     border-top: 1px solid #e9e7e7; }
   .tt-table-shop-02 tbody td {
@@ -22042,7 +22042,7 @@ table + *[class^="btn"] {
     color: #191919;
     font-weight: 500;
     letter-spacing: 0.02em;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     padding-top: 9px;
     padding-bottom: 8px; }
 
@@ -22065,20 +22065,20 @@ table + *[class^="btn"] {
   .tt-table-shop-03 strong {
     color: #191919;
     font-weight: 500;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .tt-table-shop-03 thead tr {
     border-top: 1px solid #e9e7e7; }
     .tt-table-shop-03 thead tr th {
       color: #191919;
       font-weight: 500;
-      font-family: "Hind", sans-serif; }
+      font-family: arial, sans-serif; }
 
 .tt-shop-info {
   max-width: 317px; }
   .tt-shop-info .tt-item .tt-title {
     font-size: 14px;
     color: #191919;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     letter-spacing: 0.02em;
     margin: 0;
@@ -22313,7 +22313,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     .tt-hotspot-content .tt-description .tt-title {
       font-size: 14px;
       line-height: 22px;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 400;
       color: #191919;
       margin-top: -5px;
@@ -22497,13 +22497,13 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     color: #191919; }
   .slider-revolution .tp-caption1-wd-1 {
     font-weight: 500;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .slider-revolution .tp-caption1-wd-2 {
     font-weight: 500;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .slider-revolution .tp-caption1-wd-3 {
     font-weight: 300;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .slider-revolution [class^="btn"] {
     position: inherit;
     background-color: #2879fe;
@@ -22606,10 +22606,10 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     text-align: center; }
   .slider-revolution .tp-caption2-wd-1 {
     font-weight: 500;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   .slider-revolution .tp-caption2-wd-2 {
     font-weight: 500;
-    font-family: "Hind", sans-serif; }
+    font-family: arial, sans-serif; }
   @media (min-width: 1230px) {
     .slider-revolution .tp-caption2-wd-1 {
       font-size: 50px;
@@ -22836,7 +22836,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
       padding-right: 7%; } }
   .mainSliderSlick .slide .slide-content div[class^="tp-caption-"] {
     color: #191919;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     text-align: center; }
     .mainSliderSlick .slide .slide-content div[class^="tp-caption-"]:first-child {
       margin-top: 0px; }
@@ -23332,7 +23332,7 @@ body.is-loaded .loading-content {
       width: 558px;
       text-align: center; }
     .tt-slick-main-item .tt-description .tt-title-small {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 36px;
       line-height: 1.1;
@@ -23343,7 +23343,7 @@ body.is-loaded .loading-content {
       -webkit-transition: color 0.2s linear;
       transition: color 0.2s linear; }
     .tt-slick-main-item .tt-description .tt-title-large {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919;
       font-size: 70px;
       line-height: 0.97;
@@ -23886,7 +23886,7 @@ html:not(.ie) #loader .dot {
       margin-top: 5px; }
     #tt-boxedbutton .rtlbutton {
       display: block;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #ffffff;
       overflow: hidden;
       cursor: pointer;
@@ -23994,7 +23994,7 @@ html:not(.ie) #loader .dot {
     -webkit-transform: translate3d(calc(100% + 5px), 0, 0);
     transform: translate3d(calc(100% + 5px), 0, 0); }
     #tt-boxedbutton .rtlbutton-color .box-description .box-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 600;
       color: #ffffff;
       letter-spacing: 0.04em;
@@ -24440,7 +24440,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
     .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-img + .tt-description {
       margin-left: 19px; }
     .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 500;
       color: #191919; }
@@ -24461,7 +24461,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       font-size: 16px;
       line-height: 20px;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919; }
       .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-price .new-price {
         color: #f8353e;
@@ -24475,7 +24475,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         display: inline-block; }
   .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-btn .tt-btn-addtocart {
     background: #2879fe;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     border: none;
     color: #ffffff;
     font-size: 14px;
@@ -24698,7 +24698,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       max-width: 180px;
       height: auto; }
     .tt-compare-table .tt-item .tt-image-box .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 500;
       color: #191919;
@@ -24720,7 +24720,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       font-size: 16px;
       line-height: 20px;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919; }
       .tt-compare-table .tt-item .tt-image-box .tt-price .new-price {
         color: #f8353e;
@@ -24734,7 +24734,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         display: inline-block; }
   .tt-compare-table .tt-item .tt-btn-addtocart {
     background: #2879fe;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     border: none;
     color: #ffffff;
     font-size: 14px;
@@ -24958,7 +24958,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         background: #191919;
         color: #ffffff; }
     .tt-compare-table02 .tt-col-item .tt-image-box .tt-title {
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-size: 14px;
       font-weight: 500;
       color: #191919;
@@ -24980,7 +24980,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       font-size: 16px;
       line-height: 20px;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       color: #191919; }
       .tt-compare-table02 .tt-col-item .tt-image-box .tt-price .new-price {
         color: #f8353e;
@@ -25004,7 +25004,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       padding: 20px; }
   .tt-compare-table02 .tt-col-item .tt-btn-addtocart {
     background: #2879fe;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     border: none;
     color: #ffffff;
     font-size: 14px;
@@ -25322,7 +25322,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         letter-spacing: 0.03em;
         padding-bottom: 8px;
         font-weight: 500;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         color: #191919;
         transition: all 0.2s linear;
         -ms-transition: all 0.2s linear;
@@ -25508,7 +25508,7 @@ html.touch-device {
   overflow-x: hidden; }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
@@ -25538,7 +25538,7 @@ a:focus {
 
 .btn {
   background: #2879fe;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   border: none;
   color: #ffffff;
   font-size: 14px;
@@ -25677,7 +25677,7 @@ button:focus {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   -webkit-transition: color 0.2s linear;
@@ -25715,7 +25715,7 @@ button:focus {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.04em;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   border-bottom: 1px solid #2879fe;
   transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -25776,7 +25776,7 @@ button:focus {
 h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   color: #191919;
   margin-bottom: 0px; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -26202,7 +26202,7 @@ input::-ms-clear {
   .tt-blockquote .tt-title {
     font-size: 30px;
     line-height: 40px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     font-style: italic;
     color: #191919;
@@ -26259,7 +26259,7 @@ input::-ms-clear {
   .tt-blockquote-02 .tt-title {
     font-size: 30px;
     line-height: 40px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-style: italic;
     font-weight: 500; }
   .tt-blockquote-02 .tt-title-description {
@@ -26290,7 +26290,7 @@ input::-ms-clear {
     color: #191919;
     font-size: 14px;
     line-height: 17px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     letter-spacing: 0.03em;
     padding: 12px 0 10px; }
   .tt-table-01 thead tr th:first-child {
@@ -26322,7 +26322,7 @@ input::-ms-clear {
     border-top: 1px solid #e9e7e7; }
     .tt-table-02 tbody tr td:first-child {
       color: #191919;
-      font-family: "Hind", sans-serif;
+      font-family: arial, sans-serif;
       font-weight: 500;
       letter-spacing: 0.03em;
       padding-right: 10px; }
@@ -26475,7 +26475,7 @@ Content
     line-height: 24px;
     font-weight: 500;
     letter-spacing: 0.04em;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     color: #191919;
     margin: 0px 0 0 0;
     padding: 0; }
@@ -26942,7 +26942,7 @@ textarea:focus:-ms-input-placeholder {
   .form-default .form-group label:not(.error) {
     font-size: 14px;
     color: #191919;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     padding-bottom: 4px;
     letter-spacing: 0.02em; }
@@ -26952,7 +26952,7 @@ textarea:focus:-ms-input-placeholder {
   font-size: 14px;
   border: 1px solid #f7f8fa;
   padding: 11px 12px 10px 15px;
-  font-family: "Hind", sans-serif;
+  font-family: arial, sans-serif;
   box-shadow: none;
   outline: none;
   color: #777777;
@@ -27850,7 +27850,7 @@ input[type=checkbox]:checked ~ label .check {
   font-size: 14px;
   line-height: 1;
   color: #989898;
-  font-family: "Hind", sans-serif; }
+  font-family: arial, sans-serif; }
   .tt-slick-quantity .account-number {
     font-size: 20px;
     color: #191919; }
@@ -28310,7 +28310,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
       .tt-gift-layout .tt-gift-box .tt-description .tt-sum {
         color: #ffffff;
         font-size: 32px;
-        font-family: "Hind", sans-serif;
+        font-family: arial, sans-serif;
         position: absolute;
         top: 17px;
         right: 15px;
@@ -28487,7 +28487,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     width: 100%;
     text-align: center;
     font-size: 12px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     padding: 5px 0 33px 0;
     -moz-transition: color 0.2s linear;
@@ -28808,7 +28808,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     padding-left: 20px; }
   .tt-layout-vertical .tt-title {
     font-size: 14px;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     color: #191919; }
     .tt-layout-vertical .tt-title a {
@@ -28908,7 +28908,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     color: #999999;
     font-size: 14px;
     letter-spacing: 0.02em;
-    font-family: "Hind", sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 500;
     -moz-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
@@ -29009,7 +29009,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
       font-size: 16px;
       color: #191919;
       font-weight: 500;
-      font-family: "Hind", sans-serif; }
+      font-family: arial, sans-serif; }
     .tt-content-info .tt-subscription .tt-text-small {
       color: #999999;
       font-size: 12px; }
@@ -29527,5 +29527,4 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
   align-items: center;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
-
 

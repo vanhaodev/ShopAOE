@@ -16,6 +16,9 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 const Cart = require('./models/cart');
 const Product = require('./models/product');
 const compression = require('compression');
+const testCreate = require('./util/productCreate');
+const testCtg = require('./util/productCategoryCreate');
+const createLabel = require('./util/labelCreate');
 app.use(compression());
 mongoose.set('useCreateIndex', true);
 
@@ -66,6 +69,12 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+/* env gốc
+DB = "mongodb+srv://brogrammers2527:brogrammers2527@cluster0-mwti3.mongodb.net/test?retryWrites=true&w=majority"
+PORT: "3002"
+*/
+//testCtg();
+//createLabel();
 // error handler
 app.use(function(err, req, res, next) {
   var cartProduct;

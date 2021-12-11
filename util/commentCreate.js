@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const comment = require("../models/comment");
-const urlConnect = `mongodb+srv://brogrammers2527:brogrammers2527@cluster0-mwti3.mongodb.net/test?retryWrites=true&w=majority
-`;
+const urlConnect = `mongodb://localhost:27017/aoeshop`;
 
 //Connect to db
 mongoose.connect(urlConnect, { useNewUrlParser: true }, err => {

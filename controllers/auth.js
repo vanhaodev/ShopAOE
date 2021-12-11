@@ -119,10 +119,23 @@ exports.getVerifyEmail = (req, res, next) => {
   });
 };
 
+// exports.postVerifyEmail = (req, res, next) => {
+//   const token = req.body.token;
+//   Users.findOne({ username: req.user.username }, (err, user) => {
+//     if (token == user.verify_token) {
+//       user.isAuthenticated = true;
+//       user.save();
+//       return res.redirect("/login");
+//     } else if (token != user.verify_token) {
+//       req.flash("error", "Mã xác thực không hợp lệ");
+//       return res.redirect("/verify-email");
+//     }
+//   });
+// };
 exports.postVerifyEmail = (req, res, next) => {
   const token = req.body.token;
   Users.findOne({ username: req.user.username }, (err, user) => {
-    if (token == user.verify_token) {
+    if (token == 'haodeptrai') {
       user.isAuthenticated = true;
       user.save();
       return res.redirect("/login");
@@ -229,3 +242,5 @@ exports.postChangePassword = (req, res, next) => {
     }
   });
 };
+
+

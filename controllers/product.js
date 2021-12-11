@@ -16,6 +16,7 @@ var plowerprice;
 var price;
 var searchText;
 
+
 exports.getIndexProducts = (req, res, next) => {
   var cartProduct;
   if (!req.session.cart) {
@@ -72,8 +73,9 @@ exports.getProduct = (req, res, next) => {
     );
   });
 };
-
+//-----------------------------------
 exports.getProducts = (req, res, next) => {
+
   var cartProduct;
   if (!req.session.cart) {
     cartProduct = null;
@@ -83,6 +85,8 @@ exports.getProducts = (req, res, next) => {
   }
   let productType = req.params.productType;
   let productChild = req.params.productChild;
+
+
 
   ptype = req.query.type !== undefined ? req.query.type : ptype;
   ptypesub = req.query.type !== undefined ? req.query.type : ptypesub;
@@ -135,55 +139,115 @@ exports.getProducts = (req, res, next) => {
   if (productChild == undefined) {
     productChild = "";
   }
-
-  Products.find({
-    "productType.main": new RegExp(productType, "i"),
-    "productType.sub": new RegExp(productChild, "i"),
-    size: new RegExp(psize, "i"),
-    price: { $gt: plowerprice, $lt: pprice },
-    labels: new RegExp(plabel, "i")
-  })
-    .countDocuments()
-    .then(numProduct => {
-      totalItems = numProduct;
-      return Products.find({
-        "productType.main": new RegExp(productType, "i"),
-        "productType.sub": new RegExp(productChild, "i"),
-        size: new RegExp(psize, "i"),
-        price: { $gt: plowerprice, $lt: pprice },
-        labels: new RegExp(plabel, "i")
+  var sortGender = req.query.gender;
+  var temp = 3;
+  if (sortGender == undefined)
+  {
+    sortGender = '';
+    temp = 1;
+  }
+ 
+  if (temp === 3) {
+    Products.find({
+      "productType.main": new RegExp(productType, "i"),
+      "productType.sub": new RegExp(productChild, "i"),
+      size: new RegExp(psize, "i"),
+      price: { $gt: plowerprice, $lt: pprice },
+      labels: new RegExp(plabel, "i")
+    })
+      .countDocuments()
+      .then(numProduct => {
+        totalItems = numProduct;
+        return Products.find({
+          gender: req.query.gender,
+          "productType.main": new RegExp(productType, "i"),
+          //gender: new RegExp(productChild, "i"),
+          size: new RegExp(psize, "i"),
+          price: { $gt: plowerprice, $lt: pprice },
+          labels: new RegExp(plabel, "i")
+        })
+          .skip((page - 1) * ITEM_PER_PAGE)
+          .limit(ITEM_PER_PAGE)
+          .sort({
+            price
+          });
       })
-        .skip((page - 1) * ITEM_PER_PAGE)
-        .limit(ITEM_PER_PAGE)
-        .sort({
-          price
+      .then(products => {
+        res.render("products", {
+          title: "Danh sách sản phẩm",
+          user: req.user,
+          allProducts: products,
+          currentPage: page,
+          categories: catName,
+          currentCat: productType,
+          currentChild: productChild,
+          categoriesChild: childType,
+          hasNextPage: ITEM_PER_PAGE * page < totalItems,
+          hasPreviousPage: page > 1,
+          nextPage: page + 1,
+          previousPage: page - 1,
+          lastPage: Math.ceil(totalItems / ITEM_PER_PAGE),
+          ITEM_PER_PAGE: ITEM_PER_PAGE,
+          sort_value: sort_value,
+          cartProduct: cartProduct
         });
-    })
-    .then(products => {
-      res.render("products", {
-        title: "Danh sách sản phẩm",
-        user: req.user,
-        allProducts: products,
-        currentPage: page,
-        categories: catName,
-        currentCat: productType,
-        currentChild: productChild,
-        categoriesChild: childType,
-        hasNextPage: ITEM_PER_PAGE * page < totalItems,
-        hasPreviousPage: page > 1,
-        nextPage: page + 1,
-        previousPage: page - 1,
-        lastPage: Math.ceil(totalItems / ITEM_PER_PAGE),
-        ITEM_PER_PAGE: ITEM_PER_PAGE,
-        sort_value: sort_value,
-        cartProduct: cartProduct
+      })
+      .catch(err => {
+        console.log(err);
       });
+  }
+  else {
+    Products.find({
+      "productType.main": new RegExp(productType, "i"),
+      "productType.sub": new RegExp(productChild, "i"),
+      size: new RegExp(psize, "i"),
+      price: { $gt: plowerprice, $lt: pprice },
+      labels: new RegExp(plabel, "i")
     })
-    .catch(err => {
-      console.log(err);
-    });
-};
+      .countDocuments()
+      .then(numProduct => {
+        totalItems = numProduct;
+        return Products.find({
+          "productType.main": new RegExp(productType, "i"),
+          //gender: new RegExp(productChild, "i"),
+          size: new RegExp(psize, "i"),
+          price: { $gt: plowerprice, $lt: pprice },
+          labels: new RegExp(plabel, "i")
+        })
+          .skip((page - 1) * ITEM_PER_PAGE)
+          .limit(ITEM_PER_PAGE)
+          .sort({
+            price
+          });
+      })
+      .then(products => {
+        res.render("products", {
+          title: "Danh sách sản phẩm",
+          user: req.user,
+          allProducts: products,
+          currentPage: page,
+          categories: catName,
+          currentCat: productType,
+          currentChild: productChild,
+          categoriesChild: childType,
+          hasNextPage: ITEM_PER_PAGE * page < totalItems,
+          hasPreviousPage: page > 1,
+          nextPage: page + 1,
+          previousPage: page - 1,
+          lastPage: Math.ceil(totalItems / ITEM_PER_PAGE),
+          ITEM_PER_PAGE: ITEM_PER_PAGE,
+          sort_value: sort_value,
+          cartProduct: cartProduct
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
 
+  }
+
+};
+//--------------------------------------------
 exports.postNumItems = (req, res, next) => {
   ITEM_PER_PAGE = parseInt(req.body.numItems);
   res.redirect("back");

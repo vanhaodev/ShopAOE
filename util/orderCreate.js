@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Order = require("../models/order");
-const urlConnect = `mongodb+srv://brogrammers2527:brogrammers2527@cluster0-mwti3.mongodb.net/test?retryWrites=true&w=majority
+const urlConnect = `mongodb://localhost:27017/aoeshop
 `;
 
 //Connect to db

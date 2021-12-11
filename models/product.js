@@ -10,7 +10,7 @@ const productSchema = new Schema({
   description: {
     type: String,
     required: false,
-    default: "Một sản phẩm từ Bros"
+    default: "Một sản phẩm từ AOE"
   },
   stock: {
     type: Number,
@@ -65,7 +65,7 @@ const productSchema = new Schema({
   ofSellers: {
     userId: {
       type: Schema.Types.ObjectId,
-      required: true,
+      required: false, //gốc là true
       ref: "User"
     },
     name: String
@@ -73,7 +73,7 @@ const productSchema = new Schema({
   labels: {
     type: String,
     required: false,
-    default: "Shiro"
+    default: "other"
   },
   materials: {
     type: [String],
@@ -98,6 +98,11 @@ const productSchema = new Schema({
     type: Number,
     required: false,
     default: 0
+  },
+  gender: { //tôi tự thêm
+    type: String,
+    required: false,
+    default: 'both'
   },
   comment: {
     total: {
