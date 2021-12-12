@@ -3,7 +3,7 @@ const Product = require("../models/product");
 const urlConnect = `mongodb://localhost:27017/aoeshop`;
 
 // Connect to database
-function testCreate() {
+function testCreate(req, res, next) {
   mongoose.connect(urlConnect, { useNewUrlParser: true }, err => {
     if (err) throw err;
     console.log("Connect successfully!! - Phần product Create");

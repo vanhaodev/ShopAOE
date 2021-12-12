@@ -1,9 +1,11 @@
 require('dotenv').config();
-
+const db = require('./config/dbConnect');
+db.connect();
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const session = require('express-session');
@@ -22,19 +24,20 @@ const createLabel = require('./util/labelCreate');
 app.use(compression());
 mongoose.set('useCreateIndex', true);
 
-const urlConnect = process.env.DB;
+// const urlConnect = process.env.DB;
 
-// Connect to database
-mongoose.connect(urlConnect, { useNewUrlParser: true, useUnifiedTopology: true }, err => {
-  if (err) throw err;
-  console.log('Connect successfullyy!!');
-});
+// // Connect to database
+// mongoose.connect('mongodb://localhost:27017/aoeshop', { useNewUrlParser: true, useUnifiedTopology: true }, err => {
+//   if (err) throw err;
+//   console.log('Connect successfullyy!!');
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
+app.use(bodyParser.urlencoded({extended: true}));/////////////////////////////////////////////////////////////------------------>>>
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
@@ -73,7 +76,7 @@ app.use(function(req, res, next) {
 DB = "mongodb+srv://brogrammers2527:brogrammers2527@cluster0-mwti3.mongodb.net/test?retryWrites=true&w=majority"
 PORT: "3002"
 */
-//testCtg();
+//testCreate();
 //createLabel();
 // error handler
 app.use(function(err, req, res, next) {

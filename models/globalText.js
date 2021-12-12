@@ -9,7 +9,8 @@ const globalTextSchema = new Schema({
   globalTaixiu: {
     type: String,
     required: false
-  }
+  },
+  index: {type: Number},
 });
 
 module.exports = mongoose.model('globalText', globalTextSchema);

@@ -8,6 +8,10 @@ router.get("/", productController.getIndexProducts);
 
 router.get("/product/:productId", productController.getProduct);
 
+router.get("/create-product", productController.createProduct);
+
+router.post("/creating-product", productController.creatingProduct);
+
 router.get(
   "/products/:productType?/:productChild?",
   productController.getProducts

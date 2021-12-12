@@ -39,6 +39,16 @@ const userSchema = new Schema({
     required: false,
     default: 10000
   },
+  level: {
+    type: Number,
+    required: false,
+    default: 1
+  },
+  exp: {
+    type: Number,
+    required: false,
+    default: 0
+  },
   isAuthenticated: {
     type: Boolean,
     required: false,

@@ -102,7 +102,7 @@ const productSchema = new Schema({
   gender: { //tôi tự thêm
     type: String,
     required: false,
-    default: 'both'
+    default: 'all'
   },
   comment: {
     total: {

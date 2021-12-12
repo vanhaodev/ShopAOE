@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include partials/head %>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body style="background-color: black;">
+
+  <div class="container-sm" style="background-color: rgb(190, 190, 190);">
+    <div class="row">
+      <div>
+        <form style="width: 500px;" method="post" id="create-product" action="/creating-product">
+          <div class="mb-3">
+            <label class="form-label">Tên</label>
+            <input type="text" class="form-control" name="name" id="name" >
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mô tả</label>
+            <textarea type="text" class="form-control" name="description"  id="description" ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Số lượng</label>
+            <input type="number" class="form-control" name="stock" id="stock">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Giá $</label>
+            <input type="number" class="form-control" name="price" id="price" >
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Tags</label>
+            <input type="text" class="form-control" name="tag1" id="tag1" placeholder="#tag1">
+            <input type="text" class="form-control" name="tag2" id="tag2" placeholder="#tag2">
+            <input type="text" class="form-control" name="tag3" id="tag3" placeholder="#tag3">
+            <input type="text" class="form-control" name="tag4" id="tag4" placeholder="#tag4">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Size</label> <br>
+            <label class="form-label">S</label>
+            <input type="checkbox" name="sizes" id="sizes">
+            <label class="form-label">M</label>
+            <input type="checkbox" name="sizem" id="sizem">
+            <label class="form-label">X</label>
+            <input type="checkbox" name="sizex" id="sizex">
+            <label class="form-label">XL</label>
+            <input type="checkbox" name="sizexl" id="sizexl">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Loại [Main - Sub]</label>
+            <input type="text" class="form-control" name="productTypemain" id="productTypemain" placeholder="vd: Trang phục">
+            <input type="text" class="form-control" name="productTypesub" id="productTypesub" placeholder="vd: Nón">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Màu</label> <br>
+            <label class="form-label">Xanh</label>
+            <input type="checkbox" name="colorxanh" id="colorxanh">
+            <label class="form-label">Đỏ</label>
+            <input type="checkbox" name="colordo" id="colordo">
+            <label class="form-label">Nâu</label>
+            <input type="checkbox" name="colornau" id="colornau">
+            <label class="form-label">Trắng</label>
+            <input type="checkbox" name="colortrang" id="colortrang">
+            <label class="form-label">Vàng</label>
+            <input type="checkbox" name="colorvang" id="colorvang">
+            <label class="form-label">Hồng</label>
+            <input type="checkbox" name="colorhong" id="colorhong">
+            <label class="form-label">Đen</label>
+            <input type="checkbox" name="colorden" id="colorden">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mẫu</label>
+            <input type="text" class="form-control" name="pattern" id="pattern" placeholder="vd: vải trơn">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Ảnh [Link]</label>
+            <input type="text" class="form-control" name="image1" id="image1" placeholder="Ảnh 1">
+            <input type="text" class="form-control" name="image2" id="image2" placeholder="Ảnh 2">
+            <input type="text" class="form-control" name="image3" id="image3" placeholder="Ảnh 3">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nhãn</label>
+            <select
+                style="background-color: rgb(139, 0, 46);padding-right: 10px; margin-top: 5px; color: white; font-family: roboto;"
+                name="label" id="label" >
+                <option value="nike">Nike</option>
+                <option value="louisvuitton">Louis Vuitton</option>
+                <option value="hermes">Hermes</option>
+                <option value="gucci">Gucci</option>
+                <option value="adidas">Adidas</option>
+                <option value="chanel">Chanel</option>
+                <option value="zara">Zara</option>
+                <option value="prada">Prada</option>         
+                <option value="">Khác</option>
+              </select>
+             </div>
+
+             <div class="mb-3">
+              <label class="form-label">Chất liệu</label>
+              <input type="text" class="form-control" name="materials" id="materials" placeholder="vd: 100% Da">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Giới tính</label>
+            <select
+                style="background-color: rgb(139, 0, 46);padding-right: 10px; margin-top: 5px; color: white; font-family: roboto;"
+                name="gender" id="label" >
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+                <option value="all">Tất cả</option>                
+              </select>
+            </div>
+  
+          
+          <button type="submit" class="btn btn-primary">Tạo</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+</footer>
+<a href="#" class="tt-back-to-top">BACK TO TOP</a>
+</body>
+</html>

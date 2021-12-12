@@ -25,7 +25,7 @@
         <h1 style="text-align: center;">TÀI XỈU PHONG CÁCH 12 CON GIÁP</h1>
         <marquee style="font-family: roboto; color: yellow; border: 2px;">
           <% if (tx_globallogs) { %>
-            <%= tx_globallogs %>
+            <%= tx_globallogs[0].globalTaixiu %>
               <% } %>
         </marquee>
       </div>
@@ -114,10 +114,15 @@
                 </span>
                 <span style="font-family: roboto; color: rgb(204, 204, 204);"><b>
                     <%= top20[i].username%>
-                  </b></span>
+                    <span style="color: rgb(238, 238, 238); font-family: roboto;">
+                      [lvl: <%= top20[i].level %>]
+                    </span>
+                  </b>
+                </span>
                 <span style="color: yellowgreen; font-family: roboto;">
                   <%= top20[i].dollar %>
-                </span><br>
+                </span>
+                <br>
               </td>
             </tr>
             <% } %>

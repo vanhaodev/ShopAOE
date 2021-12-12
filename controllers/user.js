@@ -1,8 +1,8 @@
 const Users = require("../models/user");
 const Cart = require("../models/cart");
 const Order = require("../models/order");
-const GlobalText = require("../models/globalText");
-
+const globalText = require("../models/globalText");
+const levelCal = require('../controllers/games/level');
 const tixiu_checkResult = require('./games/tixiu_checkResult')
 const formatUSD = require('../bin/helper/formatUSD');
 const { json } = require("body-parser");
@@ -70,37 +70,41 @@ exports.play_Taixiu = (req, res, next) => {
           }
         }
         var dollar = formatUSD(top20[i].dollar);
-        top20DESC.push({ username: top20[i].username, dollar: dollar });
+        top20DESC.push({ username: top20[i].username, dollar: dollar, level: top20[i].level });
       }
     });
 
-    GlobalText.find({}).then(logs => {
-      console.log(JSON.stringify(logs)); 
-    })
+
     const messageSucc = req.flash("success")[0];
     const messageError = req.flash("error")[0];
     const taixiu_winorlost = req.cookies['taixiu_winorlost'];
     const taixiu_logs = req.cookies['taixiu_logs'];
     const taixiu_cuocvalue = req.cookies['taixiu_cuocvalue'];
     const taixiu_cuavalue = req.cookies['taixiu_cuavalue'];
-    const taixiu_globallogs = req.cookies['taixiu_globallogs'];
+
+    var globalWinnerX5 = [];
+    globalText.find({ index: 0 }).then(kq => {
+      globalWinnerX5.push({globalTaixiu: kq[0].globalTaixiu});
+    });
+
     Users.find({ user: req.user }).then(user => {
       res.render("gameTaixiu", {
         title: "Tài xỉu ring quà VIP",
         username: req.user.username,
+        level: req.user.level, exp: req.user.exp,
         dollar: formatUSD(req.user.dollar),
         tx_winorlost: taixiu_winorlost,
         tx_logs: taixiu_logs,
         tx_cuoc: taixiu_cuocvalue,
         tx_cua: taixiu_cuavalue,
-        tx_globallogs: taixiu_globallogs,
+        tx_globallogs: globalWinnerX5,
         top20: top20DESC,
         messageSucc: messageSucc,
 
         messageError: messageError
       });
     });
-  }
+  } 
   else {
     res.redirect("/login");
   }
@@ -120,10 +124,12 @@ exports.play_Taixiu_checking = (req, res, next) => {
         var randomValue1;
         var randomValue2;
         var randomValue3;
+        var randomX2;
         var randomX5;
         var resultRandom = [];
         var clientValue = Number(req.body.inputCua);
         var tienCuoc = Number(req.body.inputCuoc);
+        
         res.cookie('taixiu_cuocvalue', tienCuoc);
         res.cookie('taixiu_cuavalue', clientValue);
         //tienCuoc < req.user.dollar && tienCuoc < 100001
@@ -132,7 +138,9 @@ exports.play_Taixiu_checking = (req, res, next) => {
           randomValue1 = Math.floor(Math.random() * 10) + 1; //random 1
           randomValue2 = Math.floor(Math.random() * 10) + 1; //random 2
           randomValue3 = Math.floor(Math.random() * 10) + 1; //random 3
+          
           randomX5 = Math.floor(Math.random() * 10) + 1; //random x5 tiền thưởng
+
 
           resultRandom.push(tixiu_checkResult(randomValue1));
           resultRandom.push(tixiu_checkResult(randomValue2));
@@ -142,18 +150,38 @@ exports.play_Taixiu_checking = (req, res, next) => {
 
           if (clientValue > 12 || clientValue < 1) {
             res.cookie('taixiu_logs', 'Có lỗi xảy ra, dữ liệu không hợp lệ nè, đừng F12! không được đâu :)))');
-            res.redirect('back');
+            return res.redirect('back');
           }
 
           if (clientValue == randomValue1 || clientValue == randomValue2 || clientValue == randomValue3) //nếu chọn đúng
           {
-            if (randomX5 >= 5) {
+              
+
+            if (randomX5 === 5) {
+              // BÁO KÊNH THẾ GIỚI
+              globalText.findOneAndUpdate({ index: 0 }, {
+                $set: {
+                  globalChat: '',
+                  globalTaixiu: `Chúc mừng ${req.user.username} may mắn nhận x5 tiền thưởng lên đến ${formatUSD(tienCuoc * 5)}`,
+                }
+                },
+                { new: true }, (err, globaltext) => {
+                  if (err) {
+                    console.log("Something wrong when updating data!");
+                  }
+  
+                });
+                //=========================//random từ 50 đến 300. (251 + 5 = 301)
+                req.user.exp += ((tienCuoc/100) * (Math.floor(Math.random() * 251) + 50))*5;
+                req.user.level = levelCal(req.user.exp);
               req.user.dollar = (req.user.dollar + (tienCuoc * 5));
               res.cookie('taixiu_winorlost', `Chúc mừng bạn đã chiến thắng ${formatUSD(tienCuoc * 5)}$ \n| Kết quả 
             ${resultRandom[0]}, ${resultRandom[1]}, ${resultRandom[2]} | Bạn được x5 tiền thưởng.`);
-              res.cookie('taixiu_globallogs', `Chúc mừng ${req.user.username} may mắn nhận x5 tiền thưởng lên đến ${formatUSD(tienCuoc * 5)}`)
             }
-            else {
+            else 
+            {
+              req.user.exp += (tienCuoc/100) * (Math.floor(Math.random() * 251) + 50);
+              req.user.level = levelCal(req.user.exp);
               req.user.dollar = (req.user.dollar + tienCuoc);
               res.cookie('taixiu_winorlost', `Chúc mừng bạn đã chiến thắng ${formatUSD(tienCuoc)}$ \n| Kết quả 
             ${resultRandom[0]}, ${resultRandom[1]}, ${resultRandom[2]}`);
@@ -174,18 +202,18 @@ exports.play_Taixiu_checking = (req, res, next) => {
         else {
           console.log('về nhà --==============================================================')
           res.cookie('taixiu_logs', `Tài khoản của bạn không đủ ${formatUSD(tienCuoc)}`);
-          res.redirect("/taixiu");
+          return res.redirect("/taixiu");
         }
       }
       else {
         console.log(' body ko tồn tại --==============================================================')
         res.cookie('taixiu_logs', 'Có lỗi xảy ra, dữ liệu không hợp lệ nè, đừng F12! không được đâu :)))');
-        res.redirect("/taixiu");
+        return res.redirect("/taixiu");
       }
     });
   } else {
     console.log(' ko thể xác minh --==============================================================')
-    res.redirect("/login");
+    return res.redirect("/login");
   }
 
 };

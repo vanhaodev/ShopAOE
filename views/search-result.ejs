@@ -43,16 +43,16 @@
                     <a href="/product/<%= prod._id %>">
                       <span class="tt-img"
                         ><img
-                          src="http://bros-admin.herokuapp.com/assets/images/<%= prod.images[0] %>"
-                          data-src="http://bros-admin.herokuapp.com/assets/images/<%= prod.images[0] %>"
+                          src="<%= prod.images[0] %>"
+                          data-src="<%= prod.images[0] %>"
                           alt=""
                           class="loaded"
                           data-was-processed="true"
                       /></span>
                       <span class="tt-img-roll-over"
                         ><img
-                          src="http://bros-admin.herokuapp.com/assets/images/<%= prod.images[1] %>"
-                          data-src="http://bros-admin.herokuapp.com/assets/images/<%= prod.images[1] %>"
+                          src="<%= prod.images[1] %>"
+                          data-src="<%= prod.images[1] %>"
                           alt=""
                           class="loaded"
                           data-was-processed="true"
@@ -132,7 +132,7 @@
                             <div class="tt-modal-messages"><i class="icon-f-68"></i> Đã thêm vào giỏ hàng thành công!</div>
                             <div class="tt-modal-product">
                               <div class="tt-img">
-                                <img src="/images/loader.svg" data-src="http://bros-admin.herokuapp.com/assets/images/<%= prod.images[0] %>" alt="" />
+                                <img src="/images/loader.svg" data-src="<%= prod.images[0] %>" alt="" />
                               </div>
                               <h2 class="tt-title">
                                 <a href="/product/<%= prod.name %>"><%= prod.name %></a>

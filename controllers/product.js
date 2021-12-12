@@ -141,12 +141,11 @@ exports.getProducts = (req, res, next) => {
   }
   var sortGender = req.query.gender;
   var temp = 3;
-  if (sortGender == undefined)
-  {
+  if (sortGender == undefined) {
     sortGender = '';
     temp = 1;
   }
- 
+
   if (temp === 3) {
     Products.find({
       "productType.main": new RegExp(productType, "i"),
@@ -244,6 +243,132 @@ exports.getProducts = (req, res, next) => {
         console.log(err);
       });
 
+  }
+
+};
+//------------------------------   ----- - - - - - - - - 
+exports.createProduct = (req, res, next) => {
+  console.log('đang tiến vào product create')
+  if (req.isAuthenticated()) {
+    Users.findOne({ user: req.user }).then(user => {
+      if (Number(req.user.role) >= 3) {
+        console.log('role đã hợp lệ')
+        return res.render('create-product');
+      }
+      else {
+        console.log('role ko hợp lệ')
+        return res.redirect('/');
+      }
+    });
+
+  }
+  else {
+    return res.redirect('/');
+  }
+
+};
+exports.creatingProduct = (req, res, next) => {
+  
+  //----------- XÁC MINH -------------------\\
+  if (req.body.name.length < 1
+    || req.body.description.length < 1
+    || req.body.stock.length < 1
+    || req.body.price.length < 1
+    || req.body.productTypemain.length < 1
+    || req.body.productTypesub.length < 1
+    || req.body.image1.length < 1) {
+    console.log('Dữ liệu đầu vào còn thiếu')
+    return res.redirect('back');
+  }
+  // console.log(req.body.sizes, req.body.sizem, req.body.sizex, req.body.sizexl)
+  var sizeArr = [];
+  var colorArr = [];
+  if (req.body.sizes !== null && req.body.sizes == 'on') {
+    sizeArr.push('S');
+  }
+  if (req.body.sizem !== null && req.body.sizem == 'on') {
+    sizeArr.push('M');
+  }
+  if (req.body.sizex !== null && req.body.sizex == 'on') {
+    sizeArr.push('X');
+  }
+  if (req.body.sizexl !== null && req.body.sizexl == 'on') {
+    sizeArr.push('XL');
+  }
+  console.log('================== ĐI QUA SIZEEEEEE AN TOÀN =================')
+  if (req.body.colorxanh !== null && req.body.colorxanh == 'on') {
+    colorArr.push('Xanh');
+  }
+  if (req.body.colordo !== null && req.body.colordo == 'on') {
+    colorArr.push('Đỏ');
+  }
+  if (req.body.colornau !== null && req.body.colornau == 'on') {
+    colorArr.push('Nâu');
+  }
+  if (req.body.colortrang !== null && req.body.colortrang == 'on') {
+    colorArr.push('Trắng');
+  }
+  if (req.body.colorvang !== null && req.body.colorvang == 'on') {
+    colorArr.push('Vàng');
+  }
+  if (req.body.colorhong !== null && req.body.colorhong == 'on') {
+    colorArr.push('Hồng');
+  }
+  if (req.body.colorden !== null && req.body.colorden == 'on') {
+    colorArr.push('Đen');
+  }
+
+
+console.log('================== ĐI QUA AN TOÀN =================')
+
+
+  //------------------------------------------\\
+  if (req.isAuthenticated()) {
+    Users.findOne({ user: req.user }).then(user => {
+      if (req.user.role >= 3) {
+
+        var product = new Products({
+          name: req.body.name,
+          description: req.body.description,
+          stock: req.body.stock,
+          price: req.body.price,
+          tags: ['#' + req.body.tag1, '#' + req.body.tag2, '#' + req.body.tag3, '#' + req.body.tag4],
+          size: sizeArr,
+          productType: { main: `${req.body.productTypemain}`, sub: `${req.body.productTypesub}` },
+          color: colorArr,
+          pattern: req.body.pattern,
+          images: [
+            `${req.body.image1}`,
+            `${req.body.image2}`,
+            `${req.body.image3}`,
+          ],
+          label: req.body.label,
+          materials: req.body.materials,
+          gender: req.body.gender,
+
+        });
+        sizeArr = [];
+        colorArr = [];
+
+        product.save(function (err) {
+          if (err) throw err;
+          console.log("Product successfully saved.");
+        });
+        return res.redirect('back')
+      }
+      else {
+        sizeArr = [];
+        colorArr = [];
+        console.log('role ko hợp lệ')
+        return res.redirect('/');
+      }
+    });
+
+  }
+  else {
+    sizeArr = [];
+    colorArr = [];
+    return res.redirect('/');
   }
 
 };
